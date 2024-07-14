@@ -1,4 +1,10 @@
-.Dice {
+.Rolls {
+  --rolls-cols: 1;
+  container: rolls / inline-size;
+}
+
+.Die {
+  grid-template-columns: repeat(var(--rolls-cols), minmax(0, 1fr));
   --dice-color-1: #b52126;
   --dice-color-2: #ff9800;
   --dice-color-3: #ff5722;
@@ -91,5 +97,41 @@
 
   .Dots[data-dice='6'] {
     background: var(--dice-color-6);
+  }
+}
+
+@container rolls (min-width: 200px) {
+  .Die {
+    --rolls-cols: 2;
+  }
+}
+
+@container rolls (min-width: 300px) {
+  .Die {
+    --rolls-cols: 3;
+  }
+}
+
+@container rolls (min-width: 450px) {
+  .Die {
+    --rolls-cols: 6;
+  }
+}
+
+@media (min-width: 640px) {
+  .Die {
+    --rolls-cols: 3;
+  }
+}
+
+@media (min-width: 1024px) {
+  .Die {
+    --rolls-cols: 2;
+  }
+}
+
+@media (min-width: 1280px) {
+  .Die {
+    --rolls-cols: 3;
   }
 }

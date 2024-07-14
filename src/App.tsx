@@ -4,7 +4,7 @@ import Results from './components/results/Results';
 
 function App() {
   return (
-    <div className='App flex flex-col gap-4 p-4'>
+    <div className='App flex flex-col gap-4 py-4'>
       <Title title='RollPWD' />
       <Rolls />
       <Results />

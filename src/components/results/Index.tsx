@@ -5,7 +5,7 @@ function Index() {
 
   return (
     <label
-      className='Index flex flex-auto gap-1 cursor-pointer items-center'
+      className='Index flex flex-col flex-auto gap-1 cursor-pointer items-center xs:flex-row'
       title='Put Results Here'
     >
       Index

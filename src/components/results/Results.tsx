@@ -4,7 +4,7 @@ import Result from './Result';
 
 function Results() {
   return (
-    <div className='Results flex flex-col gap-1'>
+    <div className='Results flex flex-col gap-1 mx-auto'>
       <div className='flex justify-between gap-1 items-center'>
         <Index />
         <Reset />
