@@ -10,6 +10,7 @@ type index = [string, string, string, string, string];
 
 type IndexContextType = {
   index: index;
+  ellipsis: string;
   isDiceActive: (roll: string, value: string) => boolean;
   handleDiceClick: (roll: string, value: string) => void;
   handleIndexChange: (e: { target: { value: string } }) => void;
@@ -26,6 +27,8 @@ const initialIndex: index = ['', '', '', '', ''];
 
 export const IndexProvider = ({ children }: IndexProviderProps) => {
   const [index, setIndex] = useState(initialIndex);
+
+  const ellipsis = ['.', '.', '.'].join(String.fromCharCode(160));
 
   function isDiceActive(roll: string, value: string) {
     return index[+roll] === value.toString();
@@ -75,6 +78,7 @@ export const IndexProvider = ({ children }: IndexProviderProps) => {
     <IndexContext.Provider
       value={{
         index,
+        ellipsis,
         isDiceActive,
         handleDiceClick,
         handleIndexChange,

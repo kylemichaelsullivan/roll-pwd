@@ -2,7 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
+a {
+  text-decoration: underline;
+}
+
+code {
+  font-style: italic;
+}
+
 input,
 .Results {
   max-width: calc(100vw - 1rem);
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-inline: 1rem;
+}
+
+.BinaryTable th,
+.BinaryTable td {
+  border: 1px solid;
+  text-align: center;
+  width: 10%;
+}
+
+.BinaryTable td.selected {
+  background-color: #ffff00;
 }

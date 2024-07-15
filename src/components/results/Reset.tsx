@@ -15,7 +15,7 @@ function Reset() {
     >
       <FontAwesomeIcon
         icon={faRefresh}
-        className='self-center rounded-full text-center text-2xl w-6 p-2 transition duration-300 hover:bg-gray-300'
+        className='self-center rounded-full text-center text-3xl w-6 p-2 transition duration-300 hover:bg-gray-300'
       />
     </button>
   );

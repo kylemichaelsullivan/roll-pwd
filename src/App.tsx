@@ -1,6 +1,7 @@
 import Title from './components/Title';
 import Rolls from './components/rolls/Rolls';
 import Results from './components/results/Results';
+import Documentation from './components/documentation/Documentation';
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Title title='RollPWD' />
       <Rolls />
       <Results />
+      <Documentation />
     </div>
   );
 }
