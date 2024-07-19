@@ -1,5 +1,5 @@
 type BinaryTableType = {
-  selected: number;
+  selected?: number;
 };
 
 function BinaryTable({ selected }: BinaryTableType) {
