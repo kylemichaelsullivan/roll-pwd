@@ -8,59 +8,59 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 700;
-  line-height: 1.25;
+	font-weight: 700;
+	line-height: 1.25;
 }
 
 h1 {
-  font-size: 2.5rem;
+	font-size: 2.5rem;
 }
 
 h2 {
-  font-size: 2.25rem;
+	font-size: 2.25rem;
 }
 
 h3 {
-  font-size: 2rem;
+	font-size: 2rem;
 }
 
 h4 {
-  font-size: 1.75rem;
+	font-size: 1.75rem;
 }
 
 h5 {
-  font-size: 1.5rem;
+	font-size: 1.5rem;
 }
 
 h6 {
-  font-size: 1.25rem;
+	font-size: 1.25rem;
 }
 
 a {
-  text-decoration: underline;
+	text-decoration: underline;
 }
 
 input,
 .Results {
-  max-width: calc(100vw - 1rem);
+	max-width: calc(100vw - 1rem);
 }
 
 ul {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  list-style: disc;
-  padding-right: 1rem;
-  padding-left: 2rem;
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	list-style: disc;
+	padding-right: 1rem;
+	padding-left: 2rem;
 }
 
 .BinaryTable th,
 .BinaryTable td {
-  border: 1px solid;
-  text-align: center;
-  width: 10%;
+	border: 1px solid;
+	text-align: center;
+	width: 10%;
 }
 
 .BinaryTable td.selected {
-  background-color: #ffff00;
+	background-color: #ffff00;
 }

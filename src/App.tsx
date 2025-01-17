@@ -4,14 +4,14 @@ import Results from './components/results/Results';
 import Documentation from './components/documentation/Documentation';
 
 function App() {
-  return (
-    <div className='App flex flex-col gap-4 max-w-screen-xl py-4 mx-auto'>
-      <Title title='RollPWD' />
-      <Rolls />
-      <Results />
-      <Documentation />
-    </div>
-  );
+	return (
+		<div className='App mx-auto flex max-w-screen-xl flex-col gap-4 py-4'>
+			<Title title='RollPWD' />
+			<Rolls />
+			<Results />
+			<Documentation />
+		</div>
+	);
 }
 
 export default App;

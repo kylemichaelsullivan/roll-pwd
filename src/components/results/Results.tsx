@@ -3,15 +3,15 @@ import Reset from './Reset';
 import Result from './Result';
 
 function Results() {
-  return (
-    <div className='Results flex flex-col gap-1 mx-auto'>
-      <div className='flex justify-between gap-1 items-center'>
-        <Index />
-        <Reset />
-      </div>
-      <Result />
-    </div>
-  );
+	return (
+		<div className='Results mx-auto flex flex-col gap-1'>
+			<div className='flex items-center justify-between gap-1'>
+				<Index />
+				<Reset />
+			</div>
+			<Result />
+		</div>
+	);
 }
 
 export default Results;

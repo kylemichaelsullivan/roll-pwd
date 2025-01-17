@@ -1,9 +1,9 @@
 type TitleProps = {
-  title: string;
+	title: string;
 };
 
 function Title({ title }: TitleProps) {
-  return <h1 className='Title text-center'>{title}</h1>;
+	return <h1 className='Title text-center'>{title}</h1>;
 }
 
 export default Title;

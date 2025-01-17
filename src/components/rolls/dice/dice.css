@@ -1,137 +1,137 @@
 .Rolls {
-  --rolls-cols: 1;
-  container: rolls / inline-size;
+	--rolls-cols: 1;
+	container: rolls / inline-size;
 }
 
 .Die {
-  grid-template-columns: repeat(var(--rolls-cols), minmax(0, 1fr));
-  --dice-color-1: #b52126;
-  --dice-color-2: #ff9800;
-  --dice-color-3: #ff5722;
-  --dice-color-4: #ffc107;
-  --dice-color-5: #d55155;
-  --dice-color-6: #f44336;
-  --dice-color-dot: #000;
+	grid-template-columns: repeat(var(--rolls-cols), minmax(0, 1fr));
+	--dice-color-1: #b52126;
+	--dice-color-2: #ff9800;
+	--dice-color-3: #ff5722;
+	--dice-color-4: #ffc107;
+	--dice-color-5: #d55155;
+	--dice-color-6: #f44336;
+	--dice-color-dot: #000;
 }
 
 .Dice {
-  width: 4rem;
-  height: 4rem;
-  .Dots {
-    width: 100%;
-    height: 100%;
-  }
+	width: 4rem;
+	height: 4rem;
+	.Dots {
+		width: 100%;
+		height: 100%;
+	}
 
-  .Dots[data-dice='1'] {
-    .dot:nth-child(5) {
-      background-color: var(--dice-color-dot);
-    }
-  }
+	.Dots[data-dice='1'] {
+		.dot:nth-child(5) {
+			background-color: var(--dice-color-dot);
+		}
+	}
 
-  .Dots[data-dice='2'] {
-    .dot:nth-child(3),
-    .dot:nth-child(7) {
-      background-color: var(--dice-color-dot);
-    }
-  }
+	.Dots[data-dice='2'] {
+		.dot:nth-child(3),
+		.dot:nth-child(7) {
+			background-color: var(--dice-color-dot);
+		}
+	}
 
-  .Dots[data-dice='3'] {
-    .dot:nth-child(3),
-    .dot:nth-child(5),
-    .dot:nth-child(7) {
-      background-color: var(--dice-color-dot);
-    }
-  }
+	.Dots[data-dice='3'] {
+		.dot:nth-child(3),
+		.dot:nth-child(5),
+		.dot:nth-child(7) {
+			background-color: var(--dice-color-dot);
+		}
+	}
 
-  .Dots[data-dice='4'] {
-    .dot:nth-child(1),
-    .dot:nth-child(3),
-    .dot:nth-child(7),
-    .dot:nth-child(9) {
-      background-color: var(--dice-color-dot);
-    }
-  }
+	.Dots[data-dice='4'] {
+		.dot:nth-child(1),
+		.dot:nth-child(3),
+		.dot:nth-child(7),
+		.dot:nth-child(9) {
+			background-color: var(--dice-color-dot);
+		}
+	}
 
-  .Dots[data-dice='5'] {
-    .dot:nth-child(1),
-    .dot:nth-child(3),
-    .dot:nth-child(5),
-    .dot:nth-child(7),
-    .dot:nth-child(9) {
-      background-color: var(--dice-color-dot);
-    }
-  }
+	.Dots[data-dice='5'] {
+		.dot:nth-child(1),
+		.dot:nth-child(3),
+		.dot:nth-child(5),
+		.dot:nth-child(7),
+		.dot:nth-child(9) {
+			background-color: var(--dice-color-dot);
+		}
+	}
 
-  .Dots[data-dice='6'] {
-    .dot:nth-child(1),
-    .dot:nth-child(3),
-    .dot:nth-child(4),
-    .dot:nth-child(6),
-    .dot:nth-child(7),
-    .dot:nth-child(9) {
-      background-color: var(--dice-color-dot);
-    }
-  }
+	.Dots[data-dice='6'] {
+		.dot:nth-child(1),
+		.dot:nth-child(3),
+		.dot:nth-child(4),
+		.dot:nth-child(6),
+		.dot:nth-child(7),
+		.dot:nth-child(9) {
+			background-color: var(--dice-color-dot);
+		}
+	}
 }
 
 .Dice.active {
-  .Dots[data-dice='1'] {
-    background: var(--dice-color-1);
-  }
+	.Dots[data-dice='1'] {
+		background: var(--dice-color-1);
+	}
 
-  .Dots[data-dice='2'] {
-    background: var(--dice-color-2);
-  }
+	.Dots[data-dice='2'] {
+		background: var(--dice-color-2);
+	}
 
-  .Dots[data-dice='3'] {
-    background: var(--dice-color-3);
-  }
+	.Dots[data-dice='3'] {
+		background: var(--dice-color-3);
+	}
 
-  .Dots[data-dice='4'] {
-    background: var(--dice-color-4);
-  }
+	.Dots[data-dice='4'] {
+		background: var(--dice-color-4);
+	}
 
-  .Dots[data-dice='5'] {
-    background: var(--dice-color-5);
-  }
+	.Dots[data-dice='5'] {
+		background: var(--dice-color-5);
+	}
 
-  .Dots[data-dice='6'] {
-    background: var(--dice-color-6);
-  }
+	.Dots[data-dice='6'] {
+		background: var(--dice-color-6);
+	}
 }
 
 @container rolls (min-width: 200px) {
-  .Die {
-    --rolls-cols: 2;
-  }
+	.Die {
+		--rolls-cols: 2;
+	}
 }
 
 @container rolls (min-width: 300px) {
-  .Die {
-    --rolls-cols: 3;
-  }
+	.Die {
+		--rolls-cols: 3;
+	}
 }
 
 @container rolls (min-width: 450px) {
-  .Die {
-    --rolls-cols: 6;
-  }
+	.Die {
+		--rolls-cols: 6;
+	}
 }
 
 @media (min-width: 640px) {
-  .Die {
-    --rolls-cols: 3;
-  }
+	.Die {
+		--rolls-cols: 3;
+	}
 }
 
 @media (min-width: 1024px) {
-  .Die {
-    --rolls-cols: 2;
-  }
+	.Die {
+		--rolls-cols: 2;
+	}
 }
 
 @media (min-width: 1280px) {
-  .Die {
-    --rolls-cols: 3;
-  }
+	.Die {
+		--rolls-cols: 3;
+	}
 }
